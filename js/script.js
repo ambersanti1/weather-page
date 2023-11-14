@@ -59,7 +59,7 @@ card.setAttribute("class","card")
 
 const cardHeader=document.createElement("div")
 cardHeader.setAttribute("class", "card-header")
-const h3= document.createElement("h3")
+const h5= document.createElement("h5")
 const span= document.createElement("span")
 const icon= document.createElement("img")
 icon.setAttribute("src", "https://openweathermap.org/img/w/"+ data.weather[0].icon +".png")
@@ -69,16 +69,16 @@ const temp= document.createElement("p")
 const humidity= document.createElement("p")
 const wind=document.createElement("p")
 
-h3.textContent= data.name
-temp.textContent=`Temperature: ${data.main.temp} Celsius`
+h5.textContent= data.name
+temp.textContent=`Temperature: ${data.main.temp}ºC`
 humidity.textContent=`Humidity: ${data.main.humidity} %`
 wind.textContent=`Wind Speed: ${data.wind.speed} KPH`
 
 //append all items
 
 span.append(icon)
-h3.append(span)
-cardHeader.append(h3)
+h5.append(span)
+cardHeader.append(h5)
 cardBody.append( temp, humidity,wind)
 card.append(cardHeader, cardBody)
 col.append(card)
@@ -100,7 +100,7 @@ card.setAttribute("class","card")
 
 const cardHeader=document.createElement("div")
 cardHeader.setAttribute("class", "card-header")
-const h3= document.createElement("h3")
+const h5 = document.createElement("h5")
 const span= document.createElement("span")
 const icon= document.createElement("img")
 icon.setAttribute("src", "https://openweathermap.org/img/w/"+ data[index].weather[0].icon +".png")
@@ -110,16 +110,16 @@ const temp= document.createElement("p")
 const humidity= document.createElement("p")
 const wind=document.createElement("p")
 
-h3.textContent= day
-temp.textContent=`Temperature: ${data[index].main.temp} Celsius`
+h5.textContent= day
+temp.textContent=`Temperature: ${data[index].main.temp}ºC`
 humidity.textContent=`Humidity: ${data[index].main.humidity} %`
 wind.textContent=`Wind Speed: ${data[index].wind.speed} KPH`
 
 //append all items
 
 span.append(icon)
-h3.append(span)
-cardHeader.append(h3)
+h5.append(span)
+cardHeader.append(h5)
 cardBody.append( temp, humidity,wind)
 card.append(cardHeader, cardBody)
 col.append(card)

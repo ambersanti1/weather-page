@@ -11,8 +11,8 @@
 }
 
 .card-body {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 li {
@@ -20,7 +20,7 @@ li {
 }
 
 .history {
-  padding: 20px;
+  padding: 5px;
 }
 
 
@@ -33,6 +33,7 @@ li {
   margin: 10px;
 }
 
-h3 {
-  font-size: 30px;
+
+p{
+  font-size: 17px;
 }
